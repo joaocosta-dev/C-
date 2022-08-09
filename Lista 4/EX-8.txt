@@ -1,0 +1,36 @@
+int main()
+{
+
+float vtotal,decimalconv,entrada;
+int  decimal,parcela,unidade;
+
+    printf("Digite o valor total da compra: ");
+    scanf("%f",&vtotal);
+    //multiplica por 100 pra deixar inteiro
+    decimal= (vtotal*100);
+    
+    //pega o resto por 100 pra pegar os dois decimais
+    decimal=decimal%100;
+    
+   //converte o decimal que esta inteiro, pra decimal  
+    decimalconv=decimal*0.01;
+    
+    //subtrai o decimal do valor total pra calcularmos as parcelas 
+    vtotal=vtotal-decimalconv;
+    
+    //pega o resto do valor total por 10, sem os decimais que vai dar a casa da unidade
+    unidade=(int)vtotal%10;
+    
+    //subtrai a unidade do valor pra poder calcular as parcelas 
+    vtotal=vtotal-unidade;
+    
+  //divide o valor todo por 3
+    parcela= vtotal/3;
+    
+  //adiona os decimais e as unidades que foram retiradas  
+    entrada=parcela+decimalconv+unidade;
+   
+    printf("Voce ira pagar uma entrada de %.2f e duas parcelas de %i",entrada,parcela);
+ 
+ return 0;
+}

@@ -1,0 +1,12 @@
+int main()
+{
+    int nota1,nota2,nota3,media;
+    
+    printf("Digite os 3 numeros: ");
+    scanf("%i %i %i",&nota1,&nota2,&nota3);
+    
+    media = (nota1+nota2+nota3)/3;
+    
+    printf("%i",media);
+    return 0;
+}

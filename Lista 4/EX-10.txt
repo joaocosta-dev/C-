@@ -1,0 +1,70 @@
+int main()
+{   
+    float b1n1,b1n2,b1n3,b1n4,b2n1,b2n2,b2n3,b2n4,b3n1,b3n2,b3n3,b3n4,b4n1,b4n2,b4n3,b4n4;
+    float medb1=0,medb2=0,medb3=0,medb4=0,medfin=0,medfinrec=0;
+        
+       printf("Primeiro bimestre\n");
+       printf("Digite a nota da prova 1: ");
+       scanf("%f",&b1n1);
+       printf("Digite a nota da prova 2: ");
+       scanf("%f",&b1n2);
+       printf("Digite a nota da prova 3: ");
+       scanf("%f",&b1n3);
+       printf("Digite a nota da prova 4: ");
+       scanf("%f",&b1n4);
+        medb1=(b1n1+b1n2+b1n3+b1n4)/4;
+        
+       printf("Segundo bimestre\n");
+       printf("Digite a nota da prova 1: ");
+       scanf("%f",&b2n1);
+       printf("Digite a nota da prova 2: ");
+       scanf("%f",&b2n2);
+       printf("Digite a nota da prova 3: ");
+       scanf("%f",&b2n3);
+       printf("Digite a nota da prova 4: ");
+       scanf("%f",&b2n4);
+        medb2=(b2n1+b2n2+b2n3+b2n4)/4;
+       printf("terceiro bimestre\n");
+       printf("Digite a nota da prova 1: ");
+       scanf("%f",&b3n1);
+       printf("Digite a nota da prova 2: ");
+       scanf("%f",&b3n2);
+       printf("Digite a nota da prova 3: ");
+       scanf("%f",&b3n3);
+       printf("Digite a nota da prova 4: ");
+       scanf("%f",&b3n4);
+        medb3=(b3n1+b3n2+b3n3+b3n4)/4;
+       
+       printf("Quarto bimestre\n");
+       printf("Digite a nota da prova 1: ");
+       scanf("%f",&b4n1);
+       printf("Digite a nota da prova 2: ");
+       scanf("%f",&b4n2);
+       printf("Digite a nota da prova 3: ");
+       scanf("%f",&b4n3);
+       printf("Digite a nota da prova 4: ");
+       scanf("%f",&b4n4);
+       medb4=(b4n1+b4n2+b4n3+b4n4)/4;
+       
+       medfin=(medb1+medb2+medb3+medb4)/4;
+       if(medfin>=7){
+           printf("Aluno aprovado, media: %.1f",medfin);
+       }
+       else if(medfin<5){
+            printf("Aluno reprovado, media: %.1f",medfin);
+       }
+       else{
+           float pfinal;
+          printf("Aluno de recuperação, digite a nota da prova final: ");
+          scanf("%f",&pfinal);
+          medfinrec=(((medfin*6)+(pfinal*4))/10);
+          if(medfinrec>=5.5){
+               printf("Aluno aprovado, media: %.1f",medfinrec);
+          }
+          else{
+              printf("Aluno reprovado, media: %.1f",medfinrec);
+          }
+       }
+   
+  
+}

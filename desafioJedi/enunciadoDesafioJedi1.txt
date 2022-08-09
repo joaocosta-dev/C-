@@ -1,0 +1,12 @@
+Escreva uma programa que receba um número inteiro de até dois dígitos e escreva o valor por extenso. Se o número for com mais de 02 dígitos, mostre a mensagem: "ERRO: Numero Invalido"
+
+Exemplos: 
+
+Entrada: 4
+Saída: quatro
+
+Entrada: 50
+Saída: cinquenta
+
+Entrada: 25
+Saída: vinte e cinco

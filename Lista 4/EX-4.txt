@@ -1,0 +1,28 @@
+int main()
+{
+
+int n,ns,sd,fd,td;
+    
+    printf("Digite 1 numero: ");
+    scanf("%i",&n);
+    ns=n;
+    if(n<=999){
+        while(n>0){
+       
+       //terceiro digito
+            td=n%10;
+            n=n/10;
+       
+       //segundo digito
+            sd=n%10;
+            n=n/10; 
+        
+        //primeiro digito 
+            fd=n%10;
+            n=n/10;
+        
+        printf("O numero: %i é %i%i%i",ns,td,sd,fd);
+}
+}
+ return 0;
+}

@@ -1,0 +1,12 @@
+int main()
+{   
+    int bolinhas;
+    printf("Digite a quantidade de bolinhas de gude");
+    scanf("%d",&bolinhas);
+    if(bolinhas%3==0){
+        printf("Da pra dividir igualmente para os 3 irmãos");
+    }else{
+        printf("Não dá para dividir igualmente para os 3 irmãos");
+    }
+        
+}

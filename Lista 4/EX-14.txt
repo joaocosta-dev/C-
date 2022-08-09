@@ -1,0 +1,27 @@
+int main()
+{   
+    int c=1,cont=3,nv=1,bolinhas,verificador=3;
+    int resto=0;
+    printf("Digite a quantidade de bolinhas de gude: ");
+    scanf("%d",&bolinhas);
+   while(c!=0){
+ if(verificador<=bolinhas){
+            resto=bolinhas%verificador;
+             verificador=verificador+cont;
+             cont++;
+             nv++;
+             }
+             else{
+                 c=0;
+             }
+        }
+        
+           printf("Com %d niveis\n",nv);
+           if(resto>1){
+           printf("Sobra %d bolinhas",resto);
+           }
+           else{
+                printf("Sobra %d bolinha",resto);
+           }
+      
+   }  

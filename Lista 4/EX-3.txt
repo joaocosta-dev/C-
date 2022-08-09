@@ -1,0 +1,24 @@
+int main()
+{
+
+int n,sd,fd,ns;
+    
+    printf("Digite 1 numero: ");
+    scanf("%i",&n);
+    ns=n;
+    if(n<=99){
+        while(n>0){
+       
+       //segundo digito
+            sd=n%10;
+            n=n/10; 
+        
+        //primeiro digito 
+            fd=n%10;
+            n=n/10;
+        
+        printf("O numero: %i é %i%i",ns,sd,fd);
+}
+}
+ return 0;
+}

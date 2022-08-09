@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int n1,n2;
+    
+    printf("Digite o numero 1: \n");
+    scanf("%d",&n1);
+    
+    printf("Digite o numero 2: \n");
+    scanf("%d",&n2);
+    
+        if(n1>n2){
+        printf("o %d é maior",n1);
+    }
+    
+        if(n1<n2){
+        printf("o %d é maior",n2);
+    }
+    
+        if(n1==n2){
+        printf("Os numeros são iguais");
+    }
+    
+
+    return 0;
+}

@@ -1,0 +1,28 @@
+int main()
+{   
+    int c=1,cont=3;
+    float bolinhas,verificador=3,teste;
+    printf("Digite a quantidade de bolinhas de gude");
+    scanf("%f",&bolinhas);
+   while(c!=0){
+       
+    teste=bolinhas/verificador;
+    if(teste==1){
+      printf("é um triangulo");
+            c=0;
+      }
+    else{
+             verificador=verificador+cont;
+             cont++;
+             if(verificador>bolinhas){
+                 printf("Não é um triangulo");
+                 c=0;
+             }
+        }
+             
+      
+   }  
+        
+    }
+        
+

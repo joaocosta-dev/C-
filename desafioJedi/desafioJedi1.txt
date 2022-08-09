@@ -1,0 +1,180 @@
+#include <stdio.h>
+#include <string.h>
+#include<conio.h>
+int main()
+{
+    int numero,unidade,dezena;
+    char unidadetext[20],dezenatext[20];
+        printf("Digite um numero de até dois digitos: ");
+        scanf("%d",&numero);
+        if(numero<=99){
+         unidade=numero%10;
+         dezena=numero/10;
+         
+        if(numero<10){
+       if(unidade==0){
+           
+             strcpy(unidadetext,"Zero");
+         }
+         
+        else if(unidade==1){
+             strcpy(unidadetext,"Um");
+           
+         }
+         else if(unidade==2){
+             strcpy(unidadetext,"Dois");
+           
+         }
+         else if(unidade==3){
+             strcpy(unidadetext,"Três");
+            
+         }
+         else if(unidade==4){
+             strcpy(unidadetext,"Quatro");
+             
+         }
+        else if(unidade==5){
+             strcpy(unidadetext,"Cinco");
+            
+         }
+        else if(unidade==6){
+             strcpy(unidadetext,"Seis");
+          
+         }
+        else if(unidade==7){
+             strcpy(unidadetext,"Sete");
+           
+         }
+         else if(unidade==8){
+             strcpy(unidadetext,"Oito");
+            
+         }
+         else if(unidade==9){
+             strcpy(unidadetext,"Nove");
+         }
+         }
+         
+         else if(numero>10){
+             
+             if(unidade==0){
+             strcpy(unidadetext,"");
+         }
+         
+        else if(unidade==1){
+             strcpy(unidadetext," e um");
+           
+         }
+         else if(unidade==2){
+             strcpy(unidadetext," e dois");
+           
+         }
+         else if(unidade==3){
+             strcpy(unidadetext," e três");
+            
+         }
+         else if(unidade==4){
+             strcpy(unidadetext," e quatro");
+             
+         }
+        else if(unidade==5){
+             strcpy(unidadetext," e cinco");
+            
+         }
+        else if(unidade==6){
+             strcpy(unidadetext," e seis");
+          
+         }
+        else if(unidade==7){
+             strcpy(unidadetext," e sete");
+           
+         }
+         else if(unidade==8){
+             strcpy(unidadetext," e oito");
+            
+         }
+         else if(unidade==9){
+             strcpy(unidadetext," e nove");
+         }
+         }
+         
+         if(dezena==0){
+             strcpy(dezenatext,"");
+         }
+         else if(dezena==1){
+             switch(unidade){
+                 case 0:
+                 strcpy(dezenatext,"Dez");
+                 break;
+                 case 1:
+                 strcpy(dezenatext,"Onze");
+                 break;
+                 case 2:
+                 strcpy(dezenatext,"Doze");
+                 break;
+                 case 3:
+                 strcpy(dezenatext,"Treze");
+                 break;
+                 case 4:
+                 strcpy(dezenatext,"Catorze");
+                 break;
+                 case 5:
+                 strcpy(dezenatext,"Quinze");
+                 break;
+                 case 6:
+                 strcpy(dezenatext,"Dezesseis");
+                 break;
+                 case 7:
+                 strcpy(dezenatext,"Dezessete");
+                 break;
+                 case 8:
+                 strcpy(dezenatext,"Dezoito");
+                 break;
+                 case 9:
+                 strcpy(dezenatext,"Dezenove");
+                 break;
+             
+             }
+         }
+         else if(dezena==2){
+             strcpy(dezenatext,"Vinte");
+         }
+          else if(dezena==3){
+             strcpy(dezenatext,"Trinta");
+         }
+          else if(dezena==4){
+             strcpy(dezenatext,"Quarenta");
+         }
+          else if(dezena==5){
+             strcpy(dezenatext,"Cinquenta");
+         }
+          else if(dezena==6){
+             strcpy(dezenatext,"Sessenta");
+         }
+         else if(dezena==7){
+             strcpy(dezenatext,"Setenta");
+         }
+          else if(dezena==8){
+             strcpy(dezenatext,"Oitenta");
+         }
+        else if(dezena==9){
+             strcpy(dezenatext,"Noventa");
+         }
+        
+        if(numero>19){
+       strcat(dezenatext,unidadetext);
+       printf("%s",dezenatext);
+        }
+        else if(numero>=10 && numero<=19){
+            printf("%s",dezenatext);
+        }
+        else if(numero<10){
+            printf("%s",unidadetext);
+        }
+        }
+         else{
+            printf("ERRO: Numero inválido");
+        }
+        
+    return 0;
+
+}

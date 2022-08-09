@@ -1,0 +1,26 @@
+int main()
+{
+
+int n,unidade,dezena,centena;
+    
+    printf("Digite 1 numero: ");
+    scanf("%i",&n);
+    if(n<=999){
+        while(n>0){
+       
+            unidade= n%10;
+            n=n/10; 
+        
+            dezena=n%10;
+            n=n/10; 
+        
+            centena=n%10;
+            n=n/10; 
+        
+        printf("Centena: %i\n",centena);
+        printf("Dezena:  %i\n",dezena);
+        printf("Unidade: %i ",unidade);
+}
+}
+ return 0;
+}

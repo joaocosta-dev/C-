@@ -1,0 +1,9 @@
+int main()
+{   
+    int a,b;
+    printf("Digite o valor de A");
+    scanf("%d",&a);
+    b=a;
+    printf("Digite o valor de B");
+    scanf("%d",&a);
+}

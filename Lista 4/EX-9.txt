@@ -1,0 +1,31 @@
+int main()
+{   
+    int valor, cinqen=0,dez=0,cinq=0,dois=0;
+        
+        printf("Digite o valor do saque");
+        scanf("%d",&valor);
+        
+        while(valor!=0){
+            if(valor>=50 && valor!=51 && valor != 53){
+                valor=valor-50;
+                cinqen++;
+            }
+            else if (valor>=10 && valor!=11 && valor !=13 ){
+                    valor=valor-10;
+                    dez++;
+            }
+            else if(valor>=5 && valor%2!=0){
+              valor=valor-5;
+                cinq++;
+            }
+            
+            else if(valor>=2){
+                valor=valor-2;
+                dois++;
+            }
+            
+        }
+        printf("Notas de 50:%d\nNotas de 10:%d\nNotas de 5:%d\nNotas de 2:%d",cinqen,dez,cinq,dois);
+        
+  
+}
