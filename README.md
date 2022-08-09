@@ -1,3 +1,4 @@
+Lista 4
 1. Faça um programa para calcular a média de 3 números inteiros.
 
 2. Faça  um  programa  que,  recebendo  um  número  inteiro  como  entrada  e  mostre  o  algarismo  da  casa  das 
