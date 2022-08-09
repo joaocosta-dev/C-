@@ -66,3 +66,33 @@ Qtd de bolinhas/Nível do triangulo/Sobra
 6           3           0
 9           3           3
 16          5           1  
+
+16. Escreva um programa que peça ao usuário para digitar dois números, obtenha-os do usuário e 
+imprima a soma, o produto, a diferença, o quociente e o resto da divisão dos dois números.
+
+17. Escreva um programa que imprima do número 1 ao 4 na mesma linha. Escreva o programa 
+usando os seguintes métodos:
+a) Usando uma instrução printf sem especificadores de conversão.
+b) Usando uma instrução printf com identificadores de conversão.
+c) Usando quatro instruções printf.
+
+18. Escreva um programa em C que peça ao usuário para fornecer dois números inteiros, 
+obtenha-os do usuário e imprima o maior deles seguido das palavras "e maior". Se os 
+números forem iguais, imprima a mensagem "Estes números sao iguais". Use a instrução if 
+somente na forma de seleção simples que você aprendeu neste capítulo.
+19. Escreva um programa em C que receba três números inteiros diferentes digitados no teclado 
+e imprima a soma, a média, o produto, o menor e o maior desses números. Use a instrução if 
+somente na forma ensinada neste capítulo. A tela de diálogo deve aparecer como se segue:
+
+Entre com três inteiros diferentes: 13 27 14
+A soma e 54
+A media e 18
+O produto e 4914
+O menor e 13
+O maior e 27
+
+2.20 Escreva um programa que leia o raio de um círculo e imprima seu diâmetro, o valor de sua 
+circunferência e sua área. Use o valor constante de 3,14159 para "pi". Faça cada um destes 
+cálculos dentro da instrução (ou instruções) printf e use o especificador de conversão %f 
+(Nota: Neste capítulo, analisamos apenas variáveis e constantes inteiras. No Capítulo 3 
+analisaremos números de ponto flutuante, i.e., valores que podem possuir pontos decimais.
